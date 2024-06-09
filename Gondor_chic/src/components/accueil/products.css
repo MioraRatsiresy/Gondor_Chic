@@ -1,0 +1,78 @@
+.products-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #0d0d0d; /* Fond noir pour la section */
+    text-align: center;
+  }
+  
+  .products-title {
+    color: #d4af37; /* Texte doré pour le titre */
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+  }
+  
+  .products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacement entre les cartes */
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 300px;
+    height: 400px;
+    background-color: #333; /* Fond sombre pour chaque carte */
+    border-radius: 10px; /* Bords arrondis pour les cartes */
+    overflow: hidden; /* Cache le débordement de contenu */
+    position: relative;
+    border: 1px solid #555; /* Bordure pour chaque carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .product-image-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+  
+  .product-discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6f61; /* Couleur de fond pour le badge de remise */
+    color: #fff; /* Texte blanc pour le badge de remise */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 10px;
+  }
+  
+  .product-name {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d4af37; /* Texte doré pour le nom du produit */
+  }
+  
+  .product-price {
+    margin: 0;
+    font-size: 16px;
+  }
+  
