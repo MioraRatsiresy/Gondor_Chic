@@ -1,5 +1,4 @@
 import './artcile.css';
-import productImage from './../../assets/images/lame.jpg'; 
 import plus from './../../assets/icons/plus.png';
 import { useState } from 'react';
 
