@@ -20,7 +20,9 @@
     justify-content: center;
     align-items: center;
   }
-  
+  .details-mobile {
+    display: none;
+  }
   .product-image-wrapper {
     position: relative;
     z-index: 1;
@@ -105,4 +107,17 @@
     background-color: #f0e68c;
     color: black;
   }
-  
+  @media (max-width: 750px) {
+    .details-mobile {
+      display: block;
+    }
+    .mobile-title {
+      color: #d4af37;
+    }
+  }
+  @media (max-width: 450px) {
+    .product-day {
+      font-size: 30px;
+      margin-top: 2rem;
+    }
+  }

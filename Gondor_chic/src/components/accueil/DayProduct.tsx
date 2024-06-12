@@ -5,7 +5,7 @@ import productImage from './../../assets/images/product.jpg';
 const DayProduct : React.FC = () => {
   return (
     <>
-      <h2 className="product-day">Produit du jour</h2>
+      <h2 className="product-day" id='product-day'>Produit du jour</h2>
       <div className="product-container">
         <div className="product-content">
           <div className="product-image-wrapper">
@@ -26,6 +26,11 @@ const DayProduct : React.FC = () => {
               </p>
               <button className="see-more">VOIR PLUS</button>
             </div>
+          </div>
+          <div className='details-mobile'>
+            <p>NOUVEAUTÉ</p>
+            <h3 className='mobile-title'>Cape d'Invisibilité Hobbit</h3>
+            <p>Stock: 8 | 350 $</p>
           </div>
         </div>
       </div>

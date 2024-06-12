@@ -102,4 +102,16 @@
     overflow-y: auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
-  
+  @media (max-width: 720px) {
+    .product-details-wrapper {
+      display: none;
+    }
+    .product-image-wrapper {
+      left : 0;
+    }
+  }
+  @media (max-width: 450px) {
+    .modal {
+      top: 30%;
+    }
+  }

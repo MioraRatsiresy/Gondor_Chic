@@ -28,7 +28,7 @@ const Products: React.FC = () => {
   };
   return (
     <>
-    <div className="products-container">
+    <div className="products-container" id='products-container'>
       <h2 className="products-title">Nos produits</h2>
       <div className="products-grid">
         {productData.map((product) => (
