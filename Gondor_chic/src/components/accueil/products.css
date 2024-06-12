@@ -1,8 +1,8 @@
 .products-container {
-    width: 100%;
     padding: 20px;
     background-color: #0d0d0d; /* Fond noir pour la section */
     text-align: center;
+    overflow: hidden;
   }
   
   .products-title {
@@ -74,5 +74,32 @@
   .product-price {
     margin: 0;
     font-size: 16px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 1001;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   

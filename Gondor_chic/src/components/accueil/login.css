@@ -1,0 +1,102 @@
+.body {
+    background: url('./../../assets/images/sky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+.login-container {
+    background: transparent;
+    padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #142240;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    background-color: transparent;
+}
+
+.toggle-password {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 45px;
+}
+
+.login-button:hover {
+    background-color: #5c0d94;
+}
+.signup-button {
+    border-radius: 30px;
+    cursor: pointer;
+    height: 45px;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+}
+.no-account {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.no-account a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.no-account a:hover {
+    text-decoration: underline;
+}

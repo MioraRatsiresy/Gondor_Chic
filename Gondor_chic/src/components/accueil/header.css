@@ -80,18 +80,25 @@
   }
   
   /* Navigation links styles */
-  .nav-links {
+  .nav-links-left, 
+  .nav-links-right {
     list-style: none;
     display: flex;
     gap: 20px;
   }
-  
+  .nav-links-right {
+    margin-right: 5rem;
+  }
+  .nav-links-left {
+    margin-left: 2rem;
+  }
   .site-title {
     font-size: 1.5em;
     font-weight: bold;
   }
   
-  .nav-links a {
+  .nav-links-left a,
+  .nav-links-right a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
