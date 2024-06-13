@@ -1,0 +1,128 @@
+.custom-home-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.custom-home-product-image {
+    width: 50%;  /* Adjusted to fit the flexbox layout */
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    left: -40%;
+}
+
+.custom-home-product-details {
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(36, 38, 51);
+    color: white;
+    padding: 3rem 3rem 10px ;
+    width: 60%;
+    right: -30%;
+    top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;  
+    min-height: 400px;
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow */
+}
+
+.custom-home-product-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #d0e600;
+}
+
+.custom-home-product-greeting {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.custom-home-product-description {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.custom-home-product-stock {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.custom-home-quantity-and-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-home-quantity-input {
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-home-add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #d0e600;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.custom-home-stock-warning {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .custom-home-product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-home-product-image {
+        width: 100%;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    .custom-home-product-details {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .custom-home-quantity-and-button {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .custom-home-quantity-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
