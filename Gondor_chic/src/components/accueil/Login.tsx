@@ -1,4 +1,5 @@
 import './login.css';
+import logo from './../../assets/images/logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const Login: React.FC = () => {
@@ -12,7 +13,7 @@ const Login: React.FC = () => {
     <div className='body'>
     <div className="login-container">
         <form className="login-form">
-            <h1 className='title-login'>Gondor Chic</h1>
+            <img src={logo} alt="Gondor Chic Logo" className="site-logo"/>
             <div className="form-group">
                 <label className="username">Pseudo</label>
                 <input type="text" id="username" name="username"/>

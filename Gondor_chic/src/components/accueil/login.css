@@ -127,6 +127,8 @@
   .no-account a:hover {
     text-decoration: underline; /* Soulignement affiché au survol */
   }
+
+  
   
   @media (max-width: 450px) {
     .form-group input {
