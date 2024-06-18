@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './customHeader.css';
 import menu from './../../assets/icons/menu.svg'; 
 import closeIcon from './../../assets/icons/close.svg';
+import logo from './../../assets/images/logo.png';
 
 const CustomHeader: React.FC = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -43,7 +44,7 @@ const CustomHeader: React.FC = () => {
                         <li><a href="/nos-produits">NOS PRODUITS</a></li>
                         <li><a href="/produits-du-jour">PRODUITS DU JOUR</a></li>
                     </ul>
-                    <h1 className="site-title">GONDOR CHIC</h1>
+                    <img src={logo} alt="Gondor Chic Logo" className="site-logo"/>
                     <ul className="nav-links-right">
                         <li><a href="/contact">CONTACT</a></li>
                         <li><a href="/panier">MON PANIER</a></li>

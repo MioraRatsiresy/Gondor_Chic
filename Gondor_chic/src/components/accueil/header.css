@@ -289,3 +289,10 @@
 .sidebar-links a:hover {
   background-color: #575757;
 }
+
+.site-logo {
+  height: 100px; 
+  width: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
