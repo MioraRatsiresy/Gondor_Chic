@@ -3,6 +3,7 @@ import productImage from '../assets/images/product.jpg';
 import CustomHeader from "../components/accueil/CustomHeader";
 import CustomHome from "./CustomHome";
 import connectedUser from "../data/userData";
+import Products from "../components/accueil/Products";
 
 const ConnectedHome: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const ConnectedHome: React.FC = () => {
                 imageUrl={productImage}
                 user={connectedUser}
             />
+            <Products />
         </>
     );
 };
