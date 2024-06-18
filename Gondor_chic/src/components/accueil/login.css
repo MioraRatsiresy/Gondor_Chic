@@ -1,111 +1,140 @@
 .body {
-    background: url('./../../assets/images/sky.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: url('./../../assets/images/sky.jpg') no-repeat center center fixed; /* Image d'arrière-plan */
+    background-size: cover; /* Couvre l'intégralité de la fenêtre */
+    font-family: Arial, sans-serif; /* Police de caractères principale */
+    color: white; /* Couleur du texte pour les éléments du corps */
+    display: flex; /* Permet le centrage horizontal du contenu */
+    justify-content: center; /* Contenu centré horizontalement */
+    align-items: center; /* Contenu centré verticalement */
+    height: 50vh; /* Hauteur du corps définie à 50% de la fenêtre */
+    margin: 0; /* Supprime la marge par défaut */
+  }
+  
+  .login-container {
+    background: rgba(0, 0, 0, 0.4); /* Fond semi-transparent pour le formulaire de connexion */
+    padding: 20px; /* Rembourrage pour le contenu du formulaire de connexion */
+    border-radius: 5px; /* Coins arrondis subtils */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile pour la profondeur */
+  }
+  
+  .login-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin: 0;
-}
-
-.login-container {
-    background: transparent;
-    padding: 20px;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-form h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 400px;
-    padding: 10px;
-    border: 2px solid #142240;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    height: 35px;
-    background-color: transparent;
-}
+    flex-direction: column; /* Empile les éléments du formulaire verticalement */
+    width: 400px; /* Largeur du formulaire (ajuster selon les besoins) */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+  }
+  
+  .login-form h1 {
+    text-align: center; /* Texte du titre centré */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-family: 'Raleway', sans-serif; /* Police sans-serif moderne pour le titre */ /* Envisager une police Web comme Raleway */
+    font-size: 35px; /* Taille du titre cohérente sur tous les appareils */
+    color: #333; /* Couleur de texte plus foncée pour une meilleure lisibilité */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espacement entre les groupes de formulaires */
+    position: relative; /* Nécessaire pour le positionnement de l'icône de basculement du mot de passe */
+  }
+  
+  .form-group label {
+    display: block; /* Affiche le libellé sur sa propre ligne */
+    margin-bottom: 5px; /* Espacement sous le libellé */
+    color: #333; /* Couleur de texte plus foncée pour la lisibilité */
+  }
+  
+  
+  .form-group input {
+    width: 100%; /* Correspond à la largeur du conteneur du formulaire */
+    padding: 10px; /* Rembourrage pour les éléments d'entrée */
+    border: 1px solid #ccc; /* Bordure plus fine pour un aspect plus net */
+    border-radius: 3px; /* Coins arrondis subtils pour les entrées */
+    background-color: #f5f5f5; /* Couleur d'arrière-plan claire pour un meilleur contraste */
+    transition: background-color 0.2s ease-in-out; /* Transition de couleur de fond fluide au survol */
+  }
+  
+  .form-group input:focus {
+    background-color: #e8e8e8; /* Fond légèrement plus clair lors de la mise au point pour un retour utilisateur */
+  }
 
 .toggle-password {
-    position: absolute;
-    margin-left: -25px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.forgot-password {
-    text-align: center;
-    display: block;
-    margin-bottom: 15px;
-    color: #ccc;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.login-button {
-    background-color: #6a0dad;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    height: 45px;
-}
-
-.login-button:hover {
-    background-color: #5c0d94;
-}
-.signup-button {
-    border-radius: 30px;
-    cursor: pointer;
-    height: 45px;
-    color: white;
-    padding: 10px;
-    background-color: transparent;
-}
-.no-account {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.no-account a {
-    color: #6a0dad;
-    text-decoration: none;
-}
-
-.no-account a:hover {
-    text-decoration: underline;
-}
-@media (max-width: 450px) {
+    position: absolute; /* Positionner l'icône dans le champ de saisie */
+    right: 10px; /* Placer l'icône à droite de l'entrée */
+    top: 50%; /* Centrer l'icône verticalement dans l'entrée */
+    transform: translateY(-50%); /* Ajuster la position verticale si nécessaire */
+    cursor: pointer; /* Indiquer un élément interactif */
+    color: #ccc; /* Couleur grise pour l'icône */
+    transition: color 0.2s ease-in-out; /* Transition de couleur fluide au survol */
+  }
+  
+  .form-group input:focus + .toggle-password {
+    color: #666; /* Couleur de l'icône plus foncée lors de la mise au point pour un retour utilisateur */
+  }
+  
+  .forgot-password {
+    text-align: center; /* Texte centré */
+    display: block; /* Afficher sur sa propre ligne */
+    margin-bottom: 15px; /* Espacement sous le lien */
+    color: #999; /* Couleur de texte plus claire pour moins d'emphase */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.2s ease-in-out; /* Transition de couleur fluide au survol */
+  }
+  
+  .forgot-password:hover {
+    color: #666; /* Couleur du texte plus foncée au survol */
+  }
+  
+  .login-button {
+    background-color: #6a0dad; /* Couleur de fond violette */
+    color: white; /* Couleur du texte blanc */
+    padding: 10px; /* Rembourrage pour le bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 30px; /* Coins arrondis */
+    cursor: pointer; /* Indiquer un élément interactif */
+    height: 45px; /* Hauteur du bouton */
+    transition: background-color 0.2s ease-in-out; /* Transition de couleur de fond fluide au survol */
+  }
+  
+  .login-button:hover {
+    background-color: #5c0d94; /* Couleur de fond violette plus foncée au survol */
+  }
+  
+  .signup-button {
+    border-radius: 30px; /* Coins arrondis */
+    cursor: pointer; /* Indiquer un élément interactif */
+    height: 45px; /* Hauteur du bouton */
+    color: white; /* Couleur du texte blanc */
+    padding: 10px; /* Rembourrage pour le bouton */
+    background-color: transparent; /* Fond transparent */
+    transition: color 0.2s ease-in-out; /* Transition de couleur de texte fluide au survol */
+  }
+  
+  .signup-button:hover {
+    color: #6a0dad; /* Couleur du texte violette au survol */
+  }
+  
+  .no-account {
+    text-align: center; /* Texte centré */
+    margin-top: 10px; /* Espacement au-dessus du texte */
+  }
+  
+  .no-account a {
+    color: #6a0dad; /* Couleur du lien violette */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.2s ease-in-out; /* Transition de couleur de texte fluide au survol */
+  }
+  
+  .no-account a:hover {
+    text-decoration: underline; /* Soulignement affiché au survol */
+  }
+  
+  @media (max-width: 450px) {
     .form-group input {
-        width: 80vw;
-        height: 20px;
+      width: 80vw; /* Largeur du champ de saisie ajustée pour les petits écrans */
+      height: 20px; /* Hauteur du champ de saisie ajustée pour les petits écrans */
     }
+  
     .login-form h1 {
-        font-size: 35px;
-      }
+      font-size: 35px; /* Taille du titre ajustée pour les petits écrans */
+    }
   }

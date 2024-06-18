@@ -1,123 +1,117 @@
 .product-container {
-    position: relative;
-    width: 80%;
-    max-width: 700px;
-    margin: 40px auto;
-  }
+  position: relative; /* Permet le positionnement absolu d'éléments enfants */
+  width: 80%; /* Largeur de la carte */
+  max-width: 700px; /* Largeur maximale de la carte */
+  margin: 40px auto; /* Marge autour de la carte */
+}
+
+.product-day {
+  margin-bottom: 10px; /* Espacement sous le jour */
+  font-family: 'Times New Roman', Times, serif; /* Police de caractères serif */
+  font-size: 55px; /* Taille du texte du jour */
+  text-align: center; /* Texte centré */
+  color: #333; /* Couleur du jour (inchangé) */
+  width: 100%; /* Largeur entière du conteneur */
+}
+
+.product-content {
+  position: relative; /* Permet le positionnement absolu d'éléments enfants */
+  display: flex; /* Disposition en ligne de l'image et des détails */
+  justify-content: center; /* Alignement horizontal au centre */
+  align-items: center; /* Alignement vertical au centre */
+}
+
+.details-mobile {
+  display: none; /* Masqué par défaut */
+}
+
+.product-image-wrapper {
+  position: relative; /* Permet le positionnement absolu d'éléments enfants */
+  z-index: 1; /* Priorité d'affichage au-dessus du fond */
+  flex-basis: 50%; /* Largeur de base de l'image (la moitié de la carte) */
+  left: -40%; /* Positionnement de l'image à gauche avec un décalage */
+}
+
+.product-image {
+  width: 100%; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique de l'image */
+  display: block; /* Affichage standard de l'image */
+}
+
+.product-details-wrapper {
+  position: absolute; /* Positionnement absolu */
+  z-index: 2; /* Priorité d'affichage au-dessus de l'image */
+  background-color: rgb(36, 38, 51); /* Arrière-plan gris foncé (inchangé) */
+  color: white; /* Couleur du texte (inchangé) */
+  padding: 20px; /* Rembourrage intérieur */
+  width: 60%; /* Largeur du bloc de détails */
+  right: -30%; /* Positionnement à droite avec un décalage */
+  top: 1%; /* Positionnement en haut avec un léger décalage */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre subtile */
+  height: 92%; /* Hauteur du bloc de détails */
+  text-align: left; /* Texte aligné à gauche */
+  padding-left: 6rem; /* Padding gauche plus important */
+  padding-top: 3rem; /* Padding supérieur plus important pour espacer du jour */
+}
+
+.product-details {
+  display: flex; /* Disposition en colonne */
+  flex-direction: column; /* Alignement des éléments en haut en bas */
+  justify-content: flex-start; /* Contenu aligné en haut */
+  text-align: left; /* Texte aligné à gauche */
+  align-items: flex-start; /* Éléments alignés à gauche */
+}
   
-  .product-day {
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 55px;
-    text-align: center;
-    color: #333;
-    width: 100%;
-  }
-  
-  .product-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.product-name {
+  margin: 0; /* Pas de marge */
+  padding: 5px 0; /* Espacement avant et après le nom du produit */
+  font-size: 22px; /* Taille du texte du nom du produit */
+}
+
+.product-stock {
+  margin: 0; /* Pas de marge */
+  padding: 5px 0; /* Espacement avant et après le stock */
+  font-size: 18px; /* Taille du texte du stock */
+}
+
+.product-description {
+  margin: 0; /* Pas de marge */
+  padding: 5px 0; /* Espacement avant et après la description */
+  font-size: 16px; /* Taille du texte de la description */
+  line-height: 1.5; /* Interligne de la description */
+}
+
+.see-more {
+  color: white; /* Couleur du texte (inchangé) */
+  background-color: transparent; /* Arrière-plan transparent (inchangé) */
+  border: none; /* Pas de bordure */
+  border-radius: 25px; /* Coins arrondis */
+  padding: 10px 20px; /* Rembourrage intérieur du bouton */
+  font-weight: bold; /* Texte en gras */
+  cursor: pointer; /* Curseur main survol */
+  transition: all 0.3s ease; /* Effet de transition au survol */
+  align-self: flex-start; /* Alignement horizontal à gauche */
+  margin-top: 20px; /* Marge supérieure du bouton */
+  border: 2px solid white; /* Bordure blanche */
+}
+
+.see-more:hover {
+  background-color: #f0e68c; /* Couleur de fond en survol */
+  color: black; /* Couleur du texte en survol */
+}
+
+@media (max-width: 750px) {
   .details-mobile {
-    display: none;
+    display: block; /* Affiche les détails sur mobile */
   }
-  .product-image-wrapper {
-    position: relative;
-    z-index: 1;
-    flex-basis: 50%;
-    left: -40%;
+  .mobile-title {
+    color: #d4af37; /* Couleur du titre sur mobile (peut être personnalisé) */
   }
-  
-  .product-image {
-    width: 100%;
-    height: auto;
-    display: block;
+}
+
+@media (max-width: 450px) {
+  .product-day {
+    font-size: 30px; /* Taille du jour ajustée pour les mobiles */
+    margin-top: 2rem; /* Marge supérieure du jour ajustée pour les mobiles */
   }
-  
-  .product-details-wrapper {
-    position: absolute;
-    z-index: 2;
-    background-color: rgb(36 38 51);
-    color: white;
-    padding: 20px;
-    width: 60%;
-    right: -30%;
-    top: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    height: 92%;
-    text-align: left;
-    padding-left: 6rem;
-    padding-top: 3rem;
-  }
-  
-  .product-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    align-items: flex-start;
-  }
-  
-  .new-product {
-    font-weight: bold;
-    text-align: left;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 2px 10px;
-    align-items: flex-start;
-    justify-content: left;
-  }
-  
-  .product-name {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 22px;
-  }
-  
-  .product-stock {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 18px;
-  }
-  
-  .product-description {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .see-more {
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    align-self: flex-start;
-    margin-top: 20px;
-    border: 2px solid white;
-  }
-  
-  .see-more:hover {
-    background-color: #f0e68c;
-    color: black;
-  }
-  @media (max-width: 750px) {
-    .details-mobile {
-      display: block;
-    }
-    .mobile-title {
-      color: #d4af37;
-    }
-  }
-  @media (max-width: 450px) {
-    .product-day {
-      font-size: 30px;
-      margin-top: 2rem;
-    }
-  }
+}

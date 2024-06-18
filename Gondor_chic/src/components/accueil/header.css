@@ -1,135 +1,132 @@
-/* Header styles */
 .header {
-    width: 100%;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    position: relative;
-  }
-  
-  /* Navbar styles */
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    background-color: #000;
-  }
-  
-  .nav-top,
-  .nav-bottom {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .nav-top {
-    justify-content: flex-end;
-  }
-  
-  .nav-bottom {
-    justify-content: space-between;
-  }
-  
-  /* Search bar styles */
-  .search-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    background-color: #333;
-    color: #fff;
-    border: 2px solid #555;
-    padding: 8px 20px;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .search-input::placeholder {
-    color: #bbb;
-  }
-  
-  .search-input:focus {
-    border-color: #fff;
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    background-image: url('./../../assets/icons/search.png');
-    background-size: cover;
-    cursor: pointer;
-  }
-  
-  /* Link styles */
-  .connexion-link,
-  .panier-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .connexion-link {
-    margin-left: 10px;
-  }
-  
-  /* Navigation links styles */
-  .nav-links-left, 
-  .nav-links-right {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  .nav-links-right {
-    margin-right: 5rem;
-  }
-  .nav-links-left {
-    margin-left: 2rem;
-  }
-  .site-title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .nav-links-left a,
-  .nav-links-right a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  /* Banner styles */
-  .banner {
-    position: relative;
-    text-align: center;
-    padding: 50px 0;
-    background-image: url('./../../assets/images/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: auto;
-    min-height: 400px;
-  }
-  
-  .banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
+  width: 100%;  /* S'étend sur toute la largeur */
+  background-color: #000; /* Couleur de fond noire */
+  color: #fff; /* Couleur de texte blanche */
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Colonnes par défaut, lignes sur petit écran */
+  background-color: #000;
+}
+
+.nav-top,
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-top {
+  justify-content: flex-end; /* Alignement à droite par défaut */
+}
+
+.nav-bottom {
+  justify-content: space-between; /* Alignement justifié par défaut (peut être masqué sur petit écran) */
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;  /* S'étend sur toute la largeur */
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+}
+
+.search-input:focus {
+  border-color: #fff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url('./../../assets/icons/search.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+.connexion-link,
+.panier-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.connexion-link {
+  margin-left: 10px;
+}
+
+.nav-links-left,
+.nav-links-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links-right {
+  margin-right: 5rem; /* Ajuster la marge sur grand écran */
+}
+
+.nav-links-left {
+  margin-left: 2rem; /* Ajuster la marge sur grand écran */
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links-left a,
+.nav-links-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('./../../assets/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  min-height: 400px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
   
   .banner-content {
     display: flex;
@@ -176,89 +173,106 @@
     color: #ff9f00;
     border-color: #ff9f00;
   }
+  
   .menu {
-    display: none;
+    display: none; /* Masqué par défaut */
   }
+  
   .nav-top-right {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-top: 1rem;
   }
+  
   @media (max-width: 720px) {
+    /* En-tête (Header) */
     .header {
-      width: 100vw;
+      width: 100vw; /* S'étend sur toute la largeur sur petit écran */
     }
+  
+    /* Barre de navigation (Navbar) */
     .nav-bottom {
-      display: none;
+      display: none; /* Masque la barre inférieure sur petit écran */
     }
+  
     .nav-top {
-      justify-content: space-between;
+      justify-content: space-between; /* Alignement justifié sur petit écran */
     }
+  
     .menu {
       display: block;
       width: 40px;
       height: 40px;
+      background-color: #000; /* Couleur de fond identique à la barre de navigation */
+      color: #fff;
+      text-align: center;
+      line-height: 40px; /* Centre le contenu verticalement */
+      cursor: pointer;
     }
+  
     .nav-top-right {
       display: flex;
       align-items: center;
-      margin-top: 0;
+      margin-top: 0; /* Supprime la marge supérieure sur petit écran */
     }
   }
+  
   @media (max-width: 450px) {
     .nav-top {
-      gap: 2rem;
+      gap: 2rem; /* Espace plus important entre les éléments sur très petit écran */
     }
+  
     .connexion-link {
-      font-size: 15px;
+      font-size: 15px; /* Taille de police réduite sur très petit écran */
     }
+  
     .search-wrapper {
-      display: none;
+      display: none; /* Masque la barre de recherche sur très petit écran */
     }
+  
     .banner h1,
     .banner p {
-      font-size: 18px;
+      font-size: 18px; /* Taille de police réduite sur très petit écran */
     }
   }
-
-
-  /* Sidebar styles */
-.sidebar {
-  position: absolute;
-  top: 0;
-  left: -450px; /* Hidden by default */
-  width: 250px;
-  height: 100%;
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px; /* Add padding to avoid the menu icon overlapping */
-  z-index: 100;
-}
-
-.sidebar.open {
-  left: 0; /* Show the sidebar */
-}
-
-.sidebar .close-icon {
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-}
-
-.sidebar-links {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  gap: 2rem;
-}
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: -450px; /* Caché par défaut */
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px; /* Maintient le padding pour éviter le chevauchement de l'icône de menu */
+    z-index: 100;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Affiche la barre latérale */
+  }
+  
+  .sidebar .close-icon {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 2rem;
+  }
+  
 
 .sidebar-links li {
   padding: 8px 16px;

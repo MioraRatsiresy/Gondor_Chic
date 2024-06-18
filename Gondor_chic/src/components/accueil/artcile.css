@@ -1,126 +1,146 @@
 .article-container {
-    background-image: url('./../../assets/images/Milky.jpg');
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-}
-.article-container {
-    display: flex;
-    flex-direction: row;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    align-items: center;
-    justify-content: center;
-}
-img {
-    height: 80%;
-    width: 80%;
-}
-.gandalf {
-    font-size: 50px;
-    color: white;
-    margin-bottom: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.details-container {
-    margin-left: 5rem;
-}
-.line {
-    background-color: #d4af37;
-    height: 2px;
-    width: 100%;
-}
-.price-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.price , .price-subtitle {
-    color: white;
-}
-.price {
-    font-size: 70px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.price-subtitle {
-    text-decoration: underline;
-    font-size: large;
-}
-.custom-container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-    
-}
-.custom-text {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
-.custom-icon {
-    height: 25px;
-    width: 25px;
-}
+    background-image: url('./../../assets/images/Milky.jpg'); /* URL de l'image de fond (peut être modifiée) */
+    background-size: cover; /* Image couvre entièrement le conteneur */
+    height: 100vh; /* Hauteur égale à 100% de la fenêtre */
+    overflow: hidden; /* Masque le contenu débordant */
+  }
+  
+  .article-container {
+    display: flex; /* Disposition en ligne des éléments */
+    flex-direction: row; /* Alignement des éléments côte à côte */
+    padding-left: 5rem; /* Padding gauche */
+    padding-right: 5rem; /* Padding droit */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+  }
+  
+  img {
+    height: 80%; /* Hauteur de l'image */
+    width: 80%; /* Largeur de l'image */
+  }
+  
+  .gandalf {
+    font-size: 50px; /* Taille du texte */
+    color: white; /* Couleur du texte (inchangé) */
+    margin-bottom: 1rem; /* Marge inférieure */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères serif */
+  }
+  
+  .image-container {
+    display: flex; /* Disposition en ligne des éléments */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+  }
+  
+  .details-container {
+    margin-left: 5rem; /* Marge gauche */
+  }
+  
+  .line {
+    background-color: #d4af37; /* Couleur de la ligne (inchangé) */
+    height: 2px; /* Hauteur de la ligne */
+    width: 100%; /* Largeur de la ligne */
+  }
+  
+  .price-container {
+    display: flex; /* Disposition en colonne */
+    flex-direction: column; /* Alignement des éléments en haut en bas */
+    margin-top: 2rem; /* Marge supérieure */
+    margin-bottom: 2rem; /* Marge inférieure */
+  }
+  
+  .price,
+  .price-subtitle {
+    color: white; /* Couleur du texte (inchangé) */
+  }
+  
+  .price {
+    font-size: 70px; /* Taille du prix */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères serif */
+  }
+  
+  .price-subtitle {
+    text-decoration: underline; /* Texte souligné */
+    font-size: large; /* Taille du texte */
+  }
+  
+  .custom-container {
+    display: flex; /* Disposition en ligne des éléments */
+    flex-direction: row; /* Alignement des éléments côte à côte */
+    gap: 1rem; /* Espacement entre les éléments */
+    margin-top: 1rem; /* Marge supérieure */
+    margin-bottom: 1rem; /* Marge inférieure */
+    align-items: center; /* Alignement vertical au centre */
+  }
+  
+  .custom-text {
+    color: white; /* Couleur du texte (inchangé) */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères serif */
+  }
+  
+  .custom-icon {
+    height: 25px; /* Hauteur de l'icône */
+    width: 25px; /* Largeur de l'icône */
+  }
 
 .quantity-container {
-    display:flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-.quantite-button {
-    background-color: transparent;
-    border: 1px solid #d4af37;
-    color: white;
-    height: 3rem;
-    width: 9rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-.add-button {
-    height: 3rem;
-    width: 15rem;
-    border-radius: 5%;
-    background-color: transparent;
-    border: 1px solid #d4af37;
-    color: white;
-    cursor: pointer;
-}
-.one , .add-icon, .moins-icon {
-    font-size: 25px;
-}
-.moins-icon , .add-icon {
-    cursor: pointer;
-}
-.add-text {
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.span-container {
-    background-color: #d4af37;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.details-container {
-    margin-top: 5rem;
-}
-.quantity {
-    font-size: 25px;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 2rem;
-}
+    display: flex; /* Disposition des éléments en ligne */
+    flex-direction: row; /* Alignement des éléments côte à côte */
+    gap: 2rem; /* Espacement entre les éléments */
+  }
+  
+  .quantity-button {
+    background-color: transparent; /* Pas de couleur de fond */
+    border: 1px solid #d4af37; /* Couleur de la bordure (inchangée) */
+    color: white; /* Couleur du texte (inchangée) */
+    height: 3rem; /* Hauteur du bouton */
+    width: var(--bouton-largeur, 9rem); /* Utilise une variable pour la largeur (valeur par défaut 9rem) */
+    border-radius: 5%; /* Coins arrondis */
+    display: flex; /* Disposition des éléments en ligne */
+    flex-direction: row; /* Alignement des éléments côte à côte */
+    gap: 2rem; /* Espacement entre les éléments à l'intérieur du bouton */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+    cursor: pointer; /* Curseur main survol */
+  }
+  
+  .add-button {
+    width: var(--bouton-largeur-panier, 15rem); 
+  }
+  
+  .one,
+  .add-icon,
+  .moins-icon {
+    font-size: 25px; /* Taille de l'icône et du chiffre */
+  }
+  
+  .moins-icon,
+  .add-icon {
+    cursor: pointer; /* Curseur main survol */
+  }
+  
+  .add-text {
+    font-size: 25px; /* Taille du texte */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères (inchangée) */
+  }
+  
+  .span-container {
+    background-color: #d4af37; /* Couleur de fond (inchangée) */
+    height: 100%; /* Hauteur totale du conteneur */
+    width: 100%; /* Largeur totale du conteneur */
+    display: flex; /* Disposition des éléments en ligne */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+  }
+  
+  .details-container {
+    margin-top: 5rem; /* Marge supérieure (inchangée) */
+  }
+  
+  .quantity {
+    font-size: 25px; /* Taille du texte */
+    color: white; /* Couleur du texte (inchangée) */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractères (inchangée) */
+    margin-top: 2rem; /* Marge supérieure */
+  }
+  
