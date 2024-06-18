@@ -6,7 +6,6 @@ const Login: React.FC = () => {
 
     const handleLogin = (event: React.FormEvent) => {
         event.preventDefault();
-        // Vous pouvez ajouter votre logique d'authentification ici
         navigate('/home');
     };
    return (

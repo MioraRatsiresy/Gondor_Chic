@@ -9,7 +9,7 @@ const productData = [
       name: 'Poudre de Fée Loïden',
       image: poudre, // Remplacez par le chemin de votre image
       stock: 5,
-      price: '149$',
+      price: '149',
       discount: 20
     },
     {
@@ -17,28 +17,28 @@ const productData = [
       name: 'Chemise de Mithril d\'Erebor',
       image: mithril, // Remplacez par le chemin de votre image
       stock: 10,
-      price: '200$'
+      price: '200'
     },
     {
       id: 3,
       name: 'Lame Enchantée de Numenor',
       image: lame, // Remplacez par le chemin de votre image
       stock: 2,
-      price: '240$'
+      price: '240'
     },
     {
         id: 4,
         name: 'Poudre de Fée Loïden',
         image: poudre, // Remplacez par le chemin de votre image
         stock: 5,
-        price: '149$',
+        price: '149',
       },
       {
         id: 5,
         name: 'Chemise de Mithril d\'Erebor',
         image: mithril, // Remplacez par le chemin de votre image
         stock: 10,
-        price: '200$',
+        price: '200',
         discount: 15
       },
       {
@@ -46,7 +46,7 @@ const productData = [
         name: 'Lame Enchantée de Numenor',
         image: lame, // Remplacez par le chemin de votre image
         stock: 2,
-        price: '240$'
+        price: '240'
       },
   ];
   
