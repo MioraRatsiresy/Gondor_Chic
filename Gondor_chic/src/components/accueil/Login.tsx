@@ -1,5 +1,14 @@
-import './login.css'
+import './login.css';
+import { useNavigate } from 'react-router-dom';
+
 const Login: React.FC = () => {
+    const navigate = useNavigate();
+
+    const handleLogin = (event: React.FormEvent) => {
+        event.preventDefault();
+        // Vous pouvez ajouter votre logique d'authentification ici
+        navigate('/home');
+    };
    return (
     <div className='body'>
     <div className="login-container">
@@ -13,7 +22,7 @@ const Login: React.FC = () => {
                 <label className="password">Mot de passe</label>
                 <input type="password" id="password" name="password"/>
             </div>
-            <button type="submit" className="login-button">Se connecter</button>
+            <button onClick={handleLogin} className="login-button">Se connecter</button>
             <div className='line-blue'></div>
         </form>
     </div>
